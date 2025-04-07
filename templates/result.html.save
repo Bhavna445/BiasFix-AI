@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BiasFix-AI - Results</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        h1 { color: #2c3e50; }
+        ul { list-style: none; padding: 0; }
+        li { margin-bottom: 10px; }
+        .report { background: #f4f4f4; padding: 15px; border-radius: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Bias Detection Results</h1>
+    <div class="report">
+        <h3>Bias Summary:</h3>
+        <ul>
+            {% for job, status in bias_result.items() %}
+                <li><strong>{{ job }}</strong>: {{ status }}</li>
+            {% endfor %}
+        </ul>
+
+        <h3>Bias Report:</h3>
+        <pre>{{ bias_report }}</pre>
+    </div>
+    <a href="/">← Analyze Another File</a>
+</body>
+</html>

@@ -1,0 +1,74 @@
+Bias Analysis Report
+=====================
+
+Bias Status by Job Title:
+
+ - name: 0    Alice
+1      Bob
+2    Carol
+3    David
+4      Eva
+5    Frank
+6    Grace
+7    Henry
+8      Ivy
+9     Jack
+Name: name, dtype: object
+ - gender: 0    Female
+1      Male
+2    Female
+3      Male
+4    Female
+5      Male
+6    Female
+7      Male
+8    Female
+9      Male
+Name: gender, dtype: object
+ - job_role: 0     engineer
+1     engineer
+2      manager
+3      manager
+4        nurse
+5        nurse
+6    scientist
+7    scientist
+8      teacher
+9      teacher
+Name: job_role, dtype: object
+
+Bias Correction Summary:
+
+name: 0    Alice
+1      Bob
+2    Carol
+3    David
+4      Eva
+5    Frank
+6    Grace
+7    Henry
+8      Ivy
+9     Jack
+Name: name, dtype: object
+gender: 0    Female
+1      Male
+2    Female
+3      Male
+4    Female
+5      Male
+6    Female
+7      Male
+8    Female
+9      Male
+Name: gender, dtype: object
+job_role: 0     engineer
+1     engineer
+2      manager
+3      manager
+4        nurse
+5        nurse
+6    scientist
+7    scientist
+8      teacher
+9      teacher
+Name: job_role, dtype: object
